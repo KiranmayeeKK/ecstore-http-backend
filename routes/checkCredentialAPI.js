@@ -69,7 +69,7 @@ router.post("/", async function(req,res,next) {
 		}
 		else {
 			//If the response from the server { isVerified: false }, then send the response to the client as BAD_REQUEST with corresponding error message
-			res.statusCode = 400;
+			res.statusCode = 200;
 			res.send("Invalid credential, please upload a valid credential");
 			}
 	  })
