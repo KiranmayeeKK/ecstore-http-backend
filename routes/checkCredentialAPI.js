@@ -1,9 +1,7 @@
 var express = require("express");
 var router = express.Router();
-var cors = require('cors');
 const axios = require('axios');
 const dotenv = require('dotenv');
-const { response } = require("express");
 dotenv.config();
 
 //This verifiable credential (VC) verification function is valid for APIv0.1 of SSI bridge. In the later version the request body format is changed
